@@ -175,8 +175,10 @@ Before running the code, let's compile it first. Go to the root directory of thi
 
 ```bash
 $ cd twitter_classifier/scala/
-$./sbt/sbt compile
+$./sbt/sbt clean assembly
 ```
+
+This will compile the code and create a jar with all dependencies (fat-jar) in `target/scala_2.10/` folder. Let's run this jar.
 
 Assuming `{SPARK_HOME}` is the directory where you un-tarred the Spark tarball on your Sandbox, you can run the compiled Spark streaming code as follows:
 
