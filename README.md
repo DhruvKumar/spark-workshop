@@ -11,9 +11,9 @@ These are the instructions for following the Spark workshop which I presented on
 Prerequisites
 -------------
 
-0. Download the HDP 2.2 Sandbox from [here](http://hortonworks.com/products/hortonworks-sandbox/#install)
-1. Download and install Spark 1.2 technical preview on the sandbox by following the instructions on [this page](http://hortonworks.com/hadoop-tutorial/using-apache-spark-hdp/)
-2. Log into the sandbox, and clone this repository.  
+* Download the HDP 2.2 Sandbox from [here](http://hortonworks.com/products/hortonworks-sandbox/#install)
+* Download and install Spark 1.2 technical preview on the sandbox by following the instructions on [this page](http://hortonworks.com/hadoop-tutorial/using-apache-spark-hdp/)
+* Log into the sandbox, and clone this repository.  
 
 ```bash
 $ su hdfs
@@ -21,19 +21,19 @@ $ cd
 $ git clone https://github.com/DhruvKumar/spark-workshop
 ```
 
-3. Download the sample tweet data into the sandbox. I've collected 10000 tweets offline and have put them on Dropbox.
+* Download the sample tweet data into the sandbox. I've collected 10000 tweets offline and have put them on Dropbox.
 
 ```bash
 $ wget https://www.dropbox.com/s/t9pm8jrsi7bq107/tweets?dl=0
 ```
 
-4. Put the tweet data into hdfs, at a location /tmp/tweets
+* Put the tweet data into hdfs, at a location /tmp/tweets
 
 ```bash
 $ hadoop fs -put tweets /tmp/tweets
 ```
 
-5. Sign up for dev Twitter account and get the OAuth credentials [here for free](https://apps.twitter.com/). You need these credentials to use the Spark Streaming poriton of this workshop, which takes place at the end. You can skip this step if you're only interested in Spark SQL, Hive Context and MLlib portions of this workshop. 
+* Sign up for dev Twitter account and get the OAuth credentials [here for free](https://apps.twitter.com/). You need these credentials to use the Spark Streaming poriton of this workshop, which takes place at the end. You can skip this step if you're only interested in Spark SQL, Hive Context and MLlib portions of this workshop. 
 
 Explore the data using Spark SQL and Hive
 -----------------------------------------
