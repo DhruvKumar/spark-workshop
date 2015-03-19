@@ -1,12 +1,15 @@
 Spark Workshop Demo Instructions
 =================================
 
-These are the instructions for following the Spark workshop which I presented on March 12, 2015. The recording of workshop can be found 
+These are the instructions for following the Spark workshop which I presented on March 12, 2015 as part of [Hortonworks Parner Enablement series](http://www.hortonworks.com/partners/learn). The recording of workshop can be found 
 [here](https://www.brighttalk.com/webcast/9573/140773). By following the instructions on this page, you will be able to:
 
 1. Install Spark and execute Spark jobs on the Hortonworks Data Platform (HDP)
 2. Understand how to use Spark's main elements -- Core API, Spark SQL, Spark MLlib and Spark Streaming 
 3. Understand how Spark can be used with Hive 
+
+> This workshop uses Scala extensively. If you want to use Python, follow my colleague Ali Bajwa's workshop which uses iPython 
+> notebook for Spark MLlib. [link](https://github.com/abajwa-hw/hdp-datascience-demo)
 
 Prerequisites
 -------------
