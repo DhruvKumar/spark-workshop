@@ -21,10 +21,10 @@ $ cd
 $ git clone https://github.com/DhruvKumar/spark-workshop
 ```
 
-3. Download the sample tweet data into the sandbox
+3. Download the sample tweet data into the sandbox. I've collected 10000 tweets offline and have put them on Dropbox.
 
 ```bash
-$ wget 
+$ wget https://www.dropbox.com/s/t9pm8jrsi7bq107/tweets?dl=0
 ```
 
 4. Put the tweet data into hdfs, at a location /tmp/tweets
