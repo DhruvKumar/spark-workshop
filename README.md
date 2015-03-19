@@ -201,16 +201,16 @@ This command will set up spark streaming, connect to twitter using your dev cred
 
 To see the app in action, navigate to the Resource Manager UI at http://sandbox.hortonworks.com:8088. If you haven't edited your host machine's `/etc/hosts` file to resolve `sandbox.hortonworks.com` to the IP address of the Sandbox, you should just use the IP address of the sandbox to get to the resource manager UI. Eg: http://172.169.130.30:8088. Once in the RM UI, find the application named "dhruv.sparkdemo.Predict" in the app list. Here's what it looks like in my environment:
 
-![alt text](https://github.com/DhruvKumar/spark-workshop/)
+![Resource Manager UI](/images/resourcemanagerui.png)
 
 
 Click on the application ID URL, which will take you to the Application Master:
 
-![alt text](https://github.com/DhruvKumar/spark-workshop)
+![App Master](images/appMasterUI.png)
 
 Click on "logs" in the rightmost column, and you should see the code filtering out the language you specified. I used Arabic, and here's the screenshot from my environment:
 
-![alt text](https://github.com/DhruvKumar/spark-workshop)
+![Executor Logs](images/executorLogs.png)
 
 To kill the application, simply control-c'ing it won't work. You still need to shut down the executor process which is streaming the data. That's happening in a separate thread. To do this, you'll need to use Yarn's management command. First, identify the app id:
 
